@@ -1,0 +1,168 @@
+﻿<Window x:Class="KonyvklubAdmin.Dialogs.ProductAddDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KonyvklubAdmin.Dialogs"
+        mc:Ignorable="d"
+        Title="Termékek" Height="450" Width="400"
+        WindowStartupLocation="CenterScreen"
+        SizeToContent="Height" ResizeMode="CanMinimize">
+    <StackPanel>
+        <TextBlock x:Name="tblTitle" 
+                   Text="Új termék felvétele"
+                   Margin="10 10 10 5"
+                   FontSize="22"
+                   HorizontalAlignment="Center"/>
+        <Grid x:Name="formGrid" 
+              Margin="15 10 15 5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Column="0" 
+                       Grid.Row="0"
+                       Text="ISBN:"
+                       Margin="0 0 5 3"
+                       HorizontalAlignment="Left"
+                       FontSize="13"/>
+            <TextBox Grid.Column="1" 
+                     Grid.Row="0"
+                     x:Name="tbIsbn"
+                     Margin="0 0 0 10"
+                     PreviewTextInput="IsTextAllowed"/>
+
+            <TextBlock Grid.Column="0" 
+                       Grid.Row="1"
+                       Text="Cím:"
+                       Margin="0 0 5 3"
+                       HorizontalAlignment="Left"
+                       FontSize="13"/>
+            <TextBox Grid.Column="1" 
+                     Grid.Row="1"
+                     x:Name="tbTitle"
+                     Margin="0 0 0 10"/>
+
+            <TextBlock Grid.Column="0" 
+                       Grid.Row="2"
+                       Text="Író:"
+                       Margin="0 0 5 3"
+                       HorizontalAlignment="Left"
+                       FontSize="13"/>
+            <TextBox Grid.Column="1" 
+                     Grid.Row="2"
+                     x:Name="tbAuthor"
+                     Margin="0 0 0 10"/>
+
+            <TextBlock Grid.Column="0" 
+                       Grid.Row="3"
+                       Text="Leírás:"
+                       Margin="0 0 5 3"
+                       HorizontalAlignment="Left"
+                       FontSize="13"/>
+            <RichTextBox Grid.Column="1"
+                         Grid.Row="3"
+                         x:Name="rtbDesc"
+                         Margin="0 0 0 10"
+                         Padding="0 2 0 5"
+                         Height="62"
+                         VerticalScrollBarVisibility="Auto"
+                         PreviewKeyDown="RtbDoc_PreviewKeyDown">
+                <FlowDocument x:Name="rtbDoc" 
+                              LineHeight="2"/>
+            </RichTextBox>
+
+            <TextBlock Grid.Column="0" 
+                       Grid.Row="4"
+                       Text="Kategória:"
+                       Margin="0 0 5 3"
+                       HorizontalAlignment="Left"
+                       FontSize="13"/>
+            <ComboBox Grid.Column="1" 
+                      Grid.Row="4"
+                      x:Name="cbCategory"
+                      Margin="0 0 0 10"
+                      SelectedValuePath="Content"
+                      ToolTip="Válassz a listából, vagy adj meg egy kategóriát..."
+                      IsEditable="True"/>
+            <TextBlock Grid.Column="0" 
+                       Grid.Row="5"
+                       Text="Ár:"
+                       Margin="0 0 5 3"
+                       HorizontalAlignment="Left"
+                       FontSize="13"/>
+            <TextBox Grid.Column="1" 
+                     Grid.Row="5"
+                     x:Name="tbPrice"
+                     Margin="0 0 0 10"
+                     PreviewTextInput="IsTextAllowed"/>
+
+            <TextBlock Grid.Column="0" 
+                       Grid.Row="6"
+                       Text="Készleten:"
+                       Margin="0 0 5 3"
+                       HorizontalAlignment="Left"
+                       FontSize="13"/>
+            <TextBox Grid.Column="1" 
+                     Grid.Row="6"
+                     x:Name="tbStock"
+                     Margin="0 0 0 10"
+                     PreviewTextInput="IsTextAllowed"/>
+
+            <TextBlock Grid.Column="0" 
+                       Grid.Row="7"
+                       Text="Rendelések:"
+                       Margin="0 0 5 3"
+                       HorizontalAlignment="Left"
+                       FontSize="13"/>
+            <TextBox Grid.Column="1" 
+                     Grid.Row="7"
+                     x:Name="tbOrdered"
+                     Margin="0 0 0 10"
+                     Text="0"
+                     IsReadOnly="True"/>
+
+            <TextBlock Grid.Column="0" 
+                       Grid.Row="8"
+                       Text="Kép:"
+                       Margin="0 0 5 3"
+                       HorizontalAlignment="Left"
+                       FontSize="13"/>
+            <TextBox Grid.Column="1" 
+                     Grid.Row="8"
+                     x:Name="tbImage"
+                     Margin="0 0 0 10"/>
+        </Grid>
+
+        <Button x:Name="btnOK"
+                Content="OK"
+                Background="White"
+                Height="24"
+                Margin="10 0 10 15"
+                Padding="40 0"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Cursor="Hand"
+                VerticalContentAlignment="Center"
+                HorizontalAlignment="Center"
+                Click="BtnOK_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </StackPanel>
+</Window>

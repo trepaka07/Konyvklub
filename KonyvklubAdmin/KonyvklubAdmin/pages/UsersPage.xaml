@@ -1,0 +1,76 @@
+﻿<Page x:Class="KonyvklubAdmin.Pages.UsersPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KonyvklubAdmin.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="600"
+      Title="Felhasználók">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Frame x:Name="headerFrame" 
+               NavigationUIVisibility="Hidden"/>
+
+        <DataGrid Grid.Row="1"
+                  x:Name="usersGrid"
+                  AutoGenerateColumns="False"
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  ColumnWidth="*"
+                  RowHeaderWidth="0"
+                  IsReadOnly="True"
+                  HorizontalScrollBarVisibility="Disabled"
+                  SelectionChanged="UsersGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Email" 
+                                    Binding="{Binding email}"/>
+                <DataGridTextColumn Header="Vezetéknév"
+                                    Binding="{Binding lastname}"/>
+                <DataGridTextColumn Header="Keresztnév"
+                                    Binding="{Binding firstname}"/>
+                <DataGridTextColumn Header="Cím"
+                                    Binding="{Binding address}"/>
+                <DataGridTextColumn Header="Telefon"
+                                    Binding="{Binding phone}"/>
+                <DataGridTemplateColumn Width="auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Cursor="Hand"
+                                    Background="Transparent"
+                                    BorderThickness="0"
+                                    ToolTip="Módosítás"
+                                    Click="BtnModify_Click">
+                                <Button.Content>
+                                    <Image Source="/Img/modify32.png"
+                                           Height="15"/>
+                                </Button.Content>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Cursor="Hand"
+                                    Background="Transparent"
+                                    BorderThickness="0"
+                                    ToolTip="Törlés"
+                                    Click="BtnDelete_Click">
+                                <Button.Content>
+                                    <Image Source="/Img/delete32.png"
+                                           Height="12"/>
+                                </Button.Content>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

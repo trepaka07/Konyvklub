@@ -1,0 +1,84 @@
+.footer-container {
+  width: 100%;
+}
+.footer {
+  display: flex;
+  background-color: var(--color3);
+  max-width: 100%;
+  margin: auto;
+  padding: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  display: block;
+}
+.footer a {
+  text-decoration: none;
+  color: var(--color4);
+}
+
+.relationship,
+.information {
+  padding: 10px 50px 10px 50px;
+}
+.help {
+  padding: 50px 50px 10px 50px;
+}
+.footer-container h5 {
+  padding: 5px 40px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 80%;
+  font-weight: lighter;
+  font-style: italic;
+}
+#up {
+  display: none;
+}
+.cookie-accept {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--color1);
+  padding: 20px;
+  text-align: center;
+}
+.cookie-accept button {
+  background: var(--color3);
+  color: var(--color2);
+  border: 0;
+  margin-left: 10px;
+  margin-top: 5px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.cookie-accept button:hover {
+  background: rgba(35, 67, 94, 0.5);
+  color: var(--color1);
+}
+
+/*reszponzivitás*/
+@media screen and (max-width: 600px) {
+  #up {
+    display: block;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    padding: 0px;
+    width: 40px;
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .relationship,
+  .information,
+  .help {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,63 @@
+﻿<Window x:Class="KonyvklubAdmin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KonyvklubAdmin"
+        mc:Ignorable="d"
+        Title="Könyvklub - Bejelentkezés" 
+        Height="230" Width="500" MinHeight="175"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" 
+              x:Name="navbar"
+              Visibility="Collapsed"
+              x:FieldModifier="public"
+              IsVisibleChanged="Navbar_IsVisibleChanged">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" 
+                    x:Name="menuUsers"
+                    Content="Felhasználók"
+                    Padding="0 7"
+                    Background="White"
+                    BorderThickness="0 0 2.5 2.5"
+                    BorderBrush="DodgerBlue"
+                    Cursor="Hand"
+                    TabIndex="0"
+                    Click="Menu_Click"/>
+            <Button Grid.Column="1" 
+                    x:Name="menuOrders"
+                    Content="Rendelések"
+                    Padding="0 7"
+                    Background="White"
+                    BorderThickness="2.5 0 2.5 2.5"
+                    BorderBrush="Transparent"
+                    Cursor="Hand"
+                    TabIndex="1"
+                    Click="Menu_Click"/>
+            <Button Grid.Column="2" 
+                    x:Name="menuProducts"
+                    Content="Termékek"
+                    Padding="0 7"
+                    Background="White"
+                    BorderThickness="2.5 0 0 2.5"
+                    BorderBrush="Transparent"
+                    Cursor="Hand"
+                    TabIndex="2"
+                    Click="Menu_Click"/>
+        </Grid>
+
+        <Frame Grid.Row="1" x:Name="mainFrame" Margin="10"
+               NavigationUIVisibility="Hidden"
+               ContentRendered="Page_Rendered"/>
+    </Grid>
+</Window>

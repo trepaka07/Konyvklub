@@ -1,0 +1,92 @@
+.product {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  background-color: var(--color1);
+}
+#product-book {
+  max-width: 200px;
+  max-height: 300px;
+  min-width: 200px;
+  min-height: 300px;
+  padding: 10px;
+  width: 30%;
+}
+.description {
+  text-align: left;
+  width: 60%;
+  padding: 10px 10px 10px 30px;
+}
+.description h4 {
+  color: var(--color6);
+  margin: 30px 0 30px 0;
+}
+.description h2 {
+  color: var(--color2);
+  text-align: left;
+  font-size: 30px;
+}
+.product-price {
+  color: var(--color6);
+  font-size: 20px;
+  margin: 30px 0 30px 0;
+  padding: 20px 10px 20px 10px;
+}
+.product-card {
+  margin: 20px 0 20px 0;
+  width: 50%;
+  cursor: pointer;
+}
+.description p {
+  font-size: 20px;
+  text-align: left;
+  margin: 10px 0 30px 0;
+  padding: 10px 20px 20px 0;
+}
+.description h5 {
+  padding: 20px 0 20px 0;
+}
+/*reszponzivitás*/
+@media screen and (max-width: 600px) {
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  #product-book {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+  .description {
+    width: 100%;
+    padding: 10px;
+  }
+  .product-card {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .rproduct-book {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .product-book {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

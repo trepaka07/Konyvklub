@@ -1,0 +1,108 @@
+﻿<Window x:Class="KonyvklubAdmin.Dialogs.UserDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KonyvklubAdmin.Dialogs"
+        mc:Ignorable="d"
+        Title="Felhasználók" Height="450" Width="400"
+        WindowStartupLocation="CenterScreen"
+        SizeToContent="Height" ResizeMode="CanMinimize">
+    <StackPanel>
+        <TextBlock x:Name="tblTitle" 
+                   Text="Adatok módosítása"
+                   Margin="10 10 10 5"
+                   FontSize="22"
+                   HorizontalAlignment="Center"/>
+        <Grid x:Name="formGrid" 
+              Margin="15 10 15 5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Column="0" 
+                       Grid.Row="0"
+                       Text="Email:"
+                       Margin="0 0 5 3"
+                       HorizontalAlignment="Left"
+                       FontSize="13"/>
+            <TextBox Grid.Column="1" 
+                     Grid.Row="0"
+                     x:Name="tbEmail"
+                     Margin="0 0 0 10"
+                     IsReadOnly="True"/>
+
+            <TextBlock Grid.Column="0" 
+                       Grid.Row="1"
+                       Text="Vezetéknév:"
+                       Margin="0 0 5 3"
+                       HorizontalAlignment="Left"
+                       FontSize="13"/>
+            <TextBox Grid.Column="1" 
+                     Grid.Row="1"
+                     x:Name="tbLastname"
+                     Margin="0 0 0 10"/>
+
+            <TextBlock Grid.Column="0" 
+                       Grid.Row="2"
+                       Text="Keresztnév:"
+                       Margin="0 0 5 3"
+                       HorizontalAlignment="Left"
+                       FontSize="13"/>
+            <TextBox Grid.Column="1" 
+                     Grid.Row="2"
+                     x:Name="tbFirstname"
+                     Margin="0 0 0 10"/>
+            
+            <TextBlock Grid.Column="0" 
+                       Grid.Row="3"
+                       Text="Cím:"
+                       Margin="0 0 5 3"
+                       HorizontalAlignment="Left"
+                       FontSize="13"/>
+            <TextBox Grid.Column="1" 
+                     Grid.Row="3"
+                     x:Name="tbAddress"
+                     Margin="0 0 0 10"/>
+            
+            <TextBlock Grid.Column="0" 
+                       Grid.Row="4"
+                       Text="Telefonszám:"
+                       Margin="0 0 5 3"
+                       HorizontalAlignment="Left"
+                       FontSize="13"/>
+            <TextBox Grid.Column="1" 
+                     Grid.Row="4"
+                     x:Name="tbPhone"
+                     Margin="0 0 0 10"
+                     PreviewTextInput="IsTextAllowed"/>
+        </Grid>
+
+        <Button x:Name="btnOK"
+                Content="OK"
+                Background="White"
+                Height="24"
+                Margin="10 0 10 15"
+                Padding="40 0"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Cursor="Hand"
+                VerticalContentAlignment="Center"
+                HorizontalAlignment="Center"
+                Click="BtnOK_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </StackPanel>
+</Window>

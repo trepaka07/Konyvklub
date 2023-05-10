@@ -1,0 +1,91 @@
+﻿<Page x:Class="KonyvklubAdmin.Pages.ProductsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KonyvklubAdmin.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="600"
+      Title="Termékek">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Frame x:Name="headerFrame" 
+               NavigationUIVisibility="Hidden"/>
+        
+        <DataGrid Grid.Row="1" 
+                  x:Name="productsGrid"
+                  AutoGenerateColumns="False"
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  ColumnWidth="*"
+                  RowHeaderWidth="0"
+                  IsReadOnly="True"
+                  HorizontalScrollBarVisibility="Hidden"
+                  SelectionChanged="ProductsGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ISBN" 
+                                    Binding="{Binding isbn}"/>
+                <DataGridTextColumn Header="Cím"
+                                    Binding="{Binding title}"/>
+                <DataGridTextColumn Header="Szerző"
+                                    Binding="{Binding author}"/>
+                <DataGridTextColumn Header="Leírás"
+                                    Binding="{Binding description}">
+                    <DataGridTextColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="ToolTip" 
+                                    Value="{Binding description}"/>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Kategória"
+                                    Binding="{Binding category}"/>
+                <DataGridTextColumn Header="Ár"
+                                    Binding="{Binding price}"/>
+                <DataGridTextColumn Header="Készleten"
+                                    Binding="{Binding stock}"/>
+                <DataGridTextColumn Header="Rendelések"
+                                    Binding="{Binding ordered}"/>
+                <DataGridTextColumn Header="Kép"
+                                    Binding="{Binding image}"/>
+                <DataGridTemplateColumn Width="auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Cursor="Hand"
+                                    Background="Transparent"
+                                    BorderThickness="0"
+                                    ToolTip="Módosítás"
+                                    Click="BtnModify_Click">
+                                <Button.Content>
+                                    <Image Source="/Img/modify32.png"
+                                           Height="15"/>
+                                </Button.Content>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Cursor="Hand"
+                                    Background="Transparent"
+                                    BorderThickness="0"
+                                    ToolTip="Törlés"
+                                    Click="BtnDelete_Click">
+                                <Button.Content>
+                                    <Image Source="/Img/delete32.png"
+                                           Height="12"/>
+                                </Button.Content>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

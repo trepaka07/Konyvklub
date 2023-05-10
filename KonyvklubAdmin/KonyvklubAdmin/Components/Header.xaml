@@ -1,0 +1,165 @@
+﻿<Page x:Class="KonyvklubAdmin.Components.Header"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KonyvklubAdmin.Components"
+      mc:Ignorable="d" 
+      d:DesignHeight="100" d:DesignWidth="500"
+      Title="Header">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Horizontal"
+                    Margin="0 0 0 10">
+
+            <Menu x:Name="menuAdd" 
+                  Margin="0 0 10 0"
+                  Visibility="Collapsed">
+                <Menu.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Menu.Resources>
+
+                <MenuItem Header="Hozzáadás"
+                          Background="White"
+                          Height="23"
+                          Padding="10 0"
+                          BorderBrush="Black"
+                          BorderThickness="1"
+                          Cursor="Hand"
+                          VerticalContentAlignment="Center">
+                    <MenuItem.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </MenuItem.Resources>
+
+                    <MenuItem x:Name="menuAddManual"
+                              Header="Hozzáadás manuálisan"
+                              Cursor="Hand"
+                              Padding="0 5"
+                              Click="MenuAddManual_Click">
+                        <MenuItem.Icon>
+                            <Image Source="/Img/manual.png"/>
+                        </MenuItem.Icon>
+                        <MenuItem.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="10"/>
+                            </Style>
+                        </MenuItem.Resources>
+                    </MenuItem>
+
+                    <MenuItem x:Name="menuAddFile" 
+                              Header="Hozzáadás fájlból"
+                              Cursor="Hand"
+                              Padding="0 5"
+                              Click="MenuAddFile_Click">
+                        <MenuItem.Icon>
+                            <Image Source="/Img/file.png"/>
+                        </MenuItem.Icon>
+                        <MenuItem.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="10"/>
+                            </Style>
+                        </MenuItem.Resources>
+                    </MenuItem>
+                </MenuItem>
+            </Menu>
+
+            <TextBox x:Name="tbSearch"
+                     Width="120"
+                     Foreground="Gray"
+                     Text="Keresés"
+                     Height="23"
+                     Padding="7 0"
+                     Panel.ZIndex="1"
+                     BorderBrush="Black"
+                     BorderThickness="1"
+                     VerticalContentAlignment="Center"
+                     GotFocus="TbSearch_FocusChanged"
+                     LostFocus="TbSearch_FocusChanged"
+                     KeyUp="TbSearch_KeyUp">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Button x:Name="btnSearch"
+                    Height="23"
+                    Width="50"
+                    Margin="-20 0 5 0"
+                    Padding="21 0 5 0"
+                    Background="DeepSkyBlue"
+                    Cursor="Hand"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    Click="BtnSearch_Click">
+                <Button.Content>
+                    <Image Source="/Img/search32.png"
+                           Height="15"/>
+                </Button.Content>
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button x:Name="btnReset" 
+                    Content="Reset"
+                    Background="White"
+                    Height="23"
+                    Margin="5 0 10 0"
+                    Padding="10 0"
+                    BorderBrush="Black"
+                    BorderThickness="1"
+                    Cursor="Hand"
+                    VerticalContentAlignment="Center"
+                    ToolTip="Visszaállítás"
+                    Click="BtnReset_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
+
+        <TextBlock Grid.Column="1"
+                   x:Name="tblStatus"
+                   Foreground="Black"
+                   Text="Hibás felhsználónév vagy jelszó"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Margin="5 0 5 10"
+                   Visibility="Collapsed"/>
+
+        <Button Grid.Column="2"
+                x:Name="btnAdmin" 
+                Content="Admin kezelés"
+                Background="White"
+                Height="23"
+                Margin="5 0 10 10"
+                Padding="10 0"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Cursor="Hand"
+                VerticalContentAlignment="Center"
+                HorizontalAlignment="Right"
+                Click="BtnAdmin_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Page>

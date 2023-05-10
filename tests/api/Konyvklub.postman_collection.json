@@ -1,0 +1,780 @@
+{
+	"info": {
+		"_postman_id": "52c6ce42-481c-415f-9141-4842d015489b",
+		"name": "Konyvklub",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26431549"
+	},
+	"item": [
+		{
+			"name": "Admins",
+			"item": [
+				{
+					"name": "admins - all",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "admins",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://konyvklub-shop.hu/api/",
+							"protocol": "https",
+							"host": [
+								"konyvklub-shop",
+								"hu"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admins - login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "admin_login",
+									"value": "Trepy",
+									"type": "text"
+								},
+								{
+									"key": "adminpwd",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://konyvklub-shop.hu/api/",
+							"protocol": "https",
+							"host": [
+								"konyvklub-shop",
+								"hu"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admins - signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "admin_signup",
+									"value": "Viki",
+									"type": "text"
+								},
+								{
+									"key": "adminpwd",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://konyvklub-shop.hu/api/",
+							"protocol": "https",
+							"host": [
+								"konyvklub-shop",
+								"hu"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admins - delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "del_admin",
+									"value": "Viki",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://konyvklub-shop.hu/api/",
+							"protocol": "https",
+							"host": [
+								"konyvklub-shop",
+								"hu"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "users - all",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "users",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://konyvklub-shop.hu/api/",
+							"protocol": "https",
+							"host": [
+								"konyvklub-shop",
+								"hu"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users - search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user",
+									"value": "Trepy",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://konyvklub-shop.hu/api/",
+							"protocol": "https",
+							"host": [
+								"konyvklub-shop",
+								"hu"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users - delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "del_user",
+									"value": "ta@trepy.hu",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://konyvklub-shop.hu/api/",
+							"protocol": "https",
+							"host": [
+								"konyvklub-shop",
+								"hu"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users - modify",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mod_user",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ta@trepy.hu",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Trepák",
+									"type": "text"
+								},
+								{
+									"key": "firstname",
+									"value": "Attila",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "2235 Mende, Andrássy utca 20.",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "06704234569",
+									"type": "text"
+								},
+								{
+									"key": "pwd",
+									"value": "$2y$10$I3YeVVYX2xevaSkDGDFXj.2z91t5Eg2V.UjHvese.jjzqBi066f02",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://konyvklub-shop.hu/api/",
+							"protocol": "https",
+							"host": [
+								"konyvklub-shop",
+								"hu"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Books",
+			"item": [
+				{
+					"name": "books - all",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "books",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://konyvklub-shop.hu/api/",
+							"protocol": "https",
+							"host": [
+								"konyvklub-shop",
+								"hu"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "books - search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "book",
+									"value": "jakfarkas",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://konyvklub-shop.hu/api/",
+							"protocol": "https",
+							"host": [
+								"konyvklub-shop",
+								"hu"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "books - delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "del_book",
+									"value": "154868",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://konyvklub-shop.hu/api/",
+							"protocol": "https",
+							"host": [
+								"konyvklub-shop",
+								"hu"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "books - add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "add_book",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "isbn",
+									"value": "4561552",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Polaroidok",
+									"type": "text"
+								},
+								{
+									"key": "author",
+									"value": "Simon Márton",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Ez a polaroidok leírása",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "irodalom",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1800",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "ordered",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "polaroidok.jpg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://konyvklub-shop.hu/api/",
+							"protocol": "https",
+							"host": [
+								"konyvklub-shop",
+								"hu"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "books - modify",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mod_book",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "isbn",
+									"value": "4561552",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Polaroidok",
+									"type": "text"
+								},
+								{
+									"key": "author",
+									"value": "Simon Márton",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Ez a polaroidok leírása",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "irodalom",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1800",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "ordered",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "polaroidok.jpg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://konyvklub-shop.hu/api/",
+							"protocol": "https",
+							"host": [
+								"konyvklub-shop",
+								"hu"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "orders - all",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "orders",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://konyvklub-shop.hu/api/",
+							"protocol": "https",
+							"host": [
+								"konyvklub-shop",
+								"hu"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders - search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order",
+									"value": "TA-20230318134154",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://konyvklub-shop.hu/api/",
+							"protocol": "https",
+							"host": [
+								"konyvklub-shop",
+								"hu"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders - delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "del_order",
+									"value": "TA-20230318134154",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://konyvklub-shop.hu/api/",
+							"protocol": "https",
+							"host": [
+								"konyvklub-shop",
+								"hu"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orders - modify",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "state",
+									"value": "Elküldve",
+									"type": "text"
+								},
+								{
+									"key": "orderID",
+									"value": "TA-20230318134154",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://konyvklub-shop.hu/api/",
+							"protocol": "https",
+							"host": [
+								"konyvklub-shop",
+								"hu"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orderedbooks - search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "orderedbooks",
+									"value": "TA-20230318134154",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://konyvklub-shop.hu/api/",
+							"protocol": "https",
+							"host": [
+								"konyvklub-shop",
+								"hu"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orderedbooks - delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "del_orderedbook",
+									"value": "TA-20230318134154",
+									"type": "text"
+								},
+								{
+									"key": "isbn",
+									"value": "154868",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://konyvklub-shop.hu/api/",
+							"protocol": "https",
+							"host": [
+								"konyvklub-shop",
+								"hu"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "orderedbooks - modify",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "del_orderedbook",
+									"value": "TA-20230318134154",
+									"type": "text"
+								},
+								{
+									"key": "isbn",
+									"value": "154868",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://konyvklub-shop.hu/api/",
+							"protocol": "https",
+							"host": [
+								"konyvklub-shop",
+								"hu"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
