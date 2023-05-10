@@ -103,3 +103,11 @@ function displayTops() {
   if (next == null) return;
   next.style.visibility = endIndex == 9 ? "hidden" : "visible";
 }
+
+function goToPayment(cartCount) {
+  if (cartCount == 0) {
+    alert("A kosár üres.");
+  } else {
+    window.location.href = "?p=payment";
+  }
+}

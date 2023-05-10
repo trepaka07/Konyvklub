@@ -34,7 +34,7 @@
 
     <!-- cookie elfogadás - kész-->
     <div class="cookie-accept" style="display: <?php echo Konyvklub\get_cookie_state(); ?>;">
-        Cookie szabályzat.
+        <a href="?p=cookie">Cookie szabályzat</a>
         <form action="" method="post"><button type="submit" name="cookie" style="max-width: 300px;">Elfogadom</button></form>
     </div>
 

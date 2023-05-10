@@ -1,5 +1,9 @@
 <!-- Fizetés oldal -->
-<?php Konyvklub\is_logged_out(); ?>
+<?php Konyvklub\is_logged_out();
+if (count($_SESSION["cart"]) == 0) {
+  header("Location: ./");
+}
+?>
 
 <div class="payment">
   <div class="page-title">

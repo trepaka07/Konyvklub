@@ -46,6 +46,9 @@
   padding: 20px;
   text-align: center;
 }
+.cookie-accept a {
+  color: white;
+}
 .cookie-accept button {
   background: var(--color3);
   color: var(--color2);

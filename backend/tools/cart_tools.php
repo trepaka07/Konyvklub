@@ -8,9 +8,6 @@ if (isset($_GET["p"]) && $_GET["p"] == "cart") {
     if (!isset($_SESSION["cart"])) {
         header("Location: ./");
         set_error_msg("A kosár megnyitásához jelentkezz be!");
-    } else if (count($_SESSION["cart"]) == 0) {
-        header("Location: ./");
-        set_error_msg("A kosár nem tartalmaz egy terméket sem!");
     }
 }
 

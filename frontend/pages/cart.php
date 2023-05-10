@@ -60,7 +60,7 @@ $book_handler = new BookHandler();
         <strong class="full-price"><?php echo "Fizetendő összeg: " ?> <span><?php echo number_format($_SESSION["cart_sum"], 0, ".", ".") . " Ft"; ?></span></strong>
         <!-- pénztár -->
         <form action="" id="go-payment-form" method="post" onsubmit="return false">
-            <button id="go-payment" onclick="window.location.href='?p=payment'">Tovább a pénztárhoz</button>
+            <button id="go-payment" onclick="goToPayment(<?php echo Konyvklub\get_cart_count(); ?>)">Tovább a pénztárhoz</button>
         </form>
     </div>
 </div>
