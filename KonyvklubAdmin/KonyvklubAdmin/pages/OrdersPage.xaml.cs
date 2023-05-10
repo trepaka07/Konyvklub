@@ -33,6 +33,7 @@ namespace KonyvklubAdmin.Pages
         {
             if (selectedOrder != null)
             {
+                productsGrid.IsEnabled = selectedOrder.state != "Teljesítve";
                 productsGrid.ItemsSource = OrderHandler.GetOrderedBooks(selectedOrder.orderID);
             }
         }
@@ -46,7 +47,8 @@ namespace KonyvklubAdmin.Pages
         {
             if (Globals.Confirm($"Biztos jóvá szeretnéd hagyni a(z) {selectedOrder.orderID} számú rendelést?"))
             {
-                if (OrderHandler.DeleteOrder(selectedOrder.orderID))
+                selectedOrder.state = "Teljesítve";
+                if (OrderHandler.UpdateOrderState(selectedOrder))
                 {
                     UpdateSource();
                 }

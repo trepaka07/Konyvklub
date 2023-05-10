@@ -53,7 +53,7 @@ namespace KonyvklubAdmin.Dialogs
 
         private bool IsEverythingFilled()
         {
-            if (cbCategory.Text == "" || rtbRange == null || string.IsNullOrWhiteSpace(rtbRange.Text))
+            if (cbCategory.Text == "" || rtbRange == null)
             {
                 return false;
             }

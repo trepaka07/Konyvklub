@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\_dev\\C#\\KonyvklubAdmin\\KonyvklubAdmin\\KonyvklubAdmin.csproj": {}
+    "C:\\xampp\\htdocs\\Konyvklub\\KonyvklubAdmin\\KonyvklubAdmin\\KonyvklubAdmin.csproj": {}
   },
   "projects": {
-    "E:\\_dev\\C#\\KonyvklubAdmin\\KonyvklubAdmin\\KonyvklubAdmin.csproj": {
+    "C:\\xampp\\htdocs\\Konyvklub\\KonyvklubAdmin\\KonyvklubAdmin\\KonyvklubAdmin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\_dev\\C#\\KonyvklubAdmin\\KonyvklubAdmin\\KonyvklubAdmin.csproj",
+        "projectUniqueName": "C:\\xampp\\htdocs\\Konyvklub\\KonyvklubAdmin\\KonyvklubAdmin\\KonyvklubAdmin.csproj",
         "projectName": "KonyvklubAdmin",
-        "projectPath": "E:\\_dev\\C#\\KonyvklubAdmin\\KonyvklubAdmin\\KonyvklubAdmin.csproj",
+        "projectPath": "C:\\xampp\\htdocs\\Konyvklub\\KonyvklubAdmin\\KonyvklubAdmin\\KonyvklubAdmin.csproj",
         "packagesPath": "C:\\Users\\trepy\\.nuget\\packages\\",
-        "outputPath": "E:\\_dev\\C#\\KonyvklubAdmin\\KonyvklubAdmin\\obj\\",
+        "outputPath": "C:\\xampp\\htdocs\\Konyvklub\\KonyvklubAdmin\\KonyvklubAdmin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

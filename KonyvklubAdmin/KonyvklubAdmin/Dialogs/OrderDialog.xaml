@@ -20,7 +20,6 @@
                   SelectedValuePath="Content">
             <ComboBoxItem Content="Feldolgozás alatt"/>
             <ComboBoxItem Content="Elküldve"/>
-            <ComboBoxItem Content="Teljesítve"/>
         </ComboBox>
         <Button x:Name="btnOK"
                 Content="OK"

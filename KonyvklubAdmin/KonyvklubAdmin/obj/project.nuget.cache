@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TLyVukLcfbKNx1G0EGJvg8ztW0eSeFd0EL+yotEQhH4iqCyCkYLN4dT67SvSSJuMMctGPobWGOTQ7uzbI/Ue6Q==",
+  "dgSpecHash": "MNrjF46jw/XntS0ylZCQfyM9dP9MioScTg082oVjdseMnKuXVrq4IF6pqLoIh4wPHcIczK412x81sk/h0D6Z2g==",
   "success": true,
-  "projectFilePath": "E:\\_dev\\C#\\KonyvklubAdmin\\KonyvklubAdmin\\KonyvklubAdmin.csproj",
+  "projectFilePath": "C:\\xampp\\htdocs\\Konyvklub\\KonyvklubAdmin\\KonyvklubAdmin\\KonyvklubAdmin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\trepy\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\trepy\\.nuget\\packages\\restsharp\\109.0.1\\restsharp.109.0.1.nupkg.sha512"
