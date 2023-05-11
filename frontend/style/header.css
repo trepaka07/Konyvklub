@@ -86,6 +86,15 @@ form.search button:hover {
   max-width: 48px;
   min-width: 48px;
 }
+
+#username {
+  cursor: pointer;
+  padding: 20px 10px 20px 0;
+  background-color: transparent;
+  border: 0;
+  font-size: 22px;
+}
+
 .logout {
   display: inline-block;
   background-color: var(--color3);

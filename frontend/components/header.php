@@ -22,7 +22,7 @@
     </div>
 
     <!-- menü -->
-    <div class="menu" onclick="menuToggle(this)">
+    <div class="menu" onclick="menuToggle(this)" style="display: <?php echo Konyvklub\menu_visibility(); ?>;">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>

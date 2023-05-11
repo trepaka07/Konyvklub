@@ -1,7 +1,12 @@
 <!-- bejelentkezés-->
 
 <button id="login" onclick="toggleLogin()" style="width:auto;display:<?php echo Konyvklub\login_display(); ?>;"><img style="width: 40px" src="img/icons/user_icon1.svg" alt="Belépés"></button>
-<form action="" method="post" onsubmit="return logoutVerify()"><button id="logout" name="logout" style="width:auto;display:<?php echo Konyvklub\logout_display(); ?>;"><img style="width: 40px" src="img/icons/logout.svg" alt="Kilépés"></button></form>
+<input type="button" id="username" value="<?php echo Konyvklub\get_username(); ?>" onclick="document.getElementById('logout').click()" style="display:<?php echo Konyvklub\logout_display(); ?>;">
+<form action="" method="post" onsubmit="return logoutVerify()">
+  <button id="logout" name="logout" style="width:auto;display:<?php echo Konyvklub\logout_display(); ?>;">
+    <img style="width: 40px" src="img/icons/logout.svg" alt="Kilépés">
+  </button>
+</form>
 <div id="id01" class="modal">
   <form class="modal-content animate" id="login-form" action="./" method="post">
     <div class="imgcontainer">

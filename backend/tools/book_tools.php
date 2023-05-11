@@ -66,3 +66,11 @@ function get_image(string $img)
     }
     return $dir . "default.jpg";
 }
+
+function menu_visibility()
+{
+    if (!get_var_ok("p")) {
+        return "inline-block";
+    }
+    return "none";
+}

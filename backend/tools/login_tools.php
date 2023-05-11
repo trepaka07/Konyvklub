@@ -34,6 +34,7 @@ function login(string $email, string $pwd)
     if (!is_password_ok($user, $pwd)) return;
 
     $_SESSION["email"] = $user->email;
+    $_SESSION["username"] = $user->firstname;
     $_SESSION["logout"] = "inline-block";
     $_SESSION["login"] = "none";
     update_local_cart();
@@ -55,6 +56,14 @@ function get_email()
 {
     if (post_var_ok("email")) {
         return $_SESSION["email"];
+    }
+    return "";
+}
+
+function get_username()
+{
+    if (session_var_ok("username")) {
+        return $_SESSION["username"];
     }
     return "";
 }
