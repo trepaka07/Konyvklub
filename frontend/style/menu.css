@@ -5,6 +5,7 @@
   align-items: center;
   cursor: pointer;
   padding: 12px;
+  padding-right: 0;
 }
 
 .bar1,

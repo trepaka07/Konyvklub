@@ -111,10 +111,3 @@ function goToPayment(cartCount) {
     window.location.href = "?p=payment";
   }
 }
-
-let cartCounter = document.getElementsByClassName("cart-counter")[0];
-if (document.getElementsByClassName("menu")[0].style.display == "none") {
-  cartCounter.style.marginRight = "15px";
-} else {
-  cartCounter.style.marginRight = "0";
-}
