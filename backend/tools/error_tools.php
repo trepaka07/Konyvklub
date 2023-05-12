@@ -1,7 +1,5 @@
 <?php
 
-// TODO: eldönteni, hogy ez kell-e egyáltalán
-
 namespace Konyvklub;
 
 if (post_var_ok("close_error")) {
