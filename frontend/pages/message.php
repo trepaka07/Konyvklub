@@ -1,6 +1,6 @@
 <!-- Üzenet oldal -->
 <?php
-if (Konyvklub\get_message() == "") header("./");
+if (Konyvklub\get_message() == "") header("Location: ./");
 ?>
 
 <div style="margin: 50px; text-align: center;">
