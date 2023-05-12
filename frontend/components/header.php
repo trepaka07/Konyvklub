@@ -14,7 +14,7 @@
 
     <!-- kosár -->
     <div class="cart">
-      <a href="?p=cart"><img style="width: 40px" src="img/icons/cart2.svg" alt="Kosár"></a>
+      <a href="?p=cart" onclick="loggedIn()"><img style="width: 40px" src="img/icons/cart2.svg" alt="Kosár"></a>
     </div>
 
     <div class="cart-counter">

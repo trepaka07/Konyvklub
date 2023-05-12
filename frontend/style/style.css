@@ -11,7 +11,7 @@ html {
 
 body {
   background-image: url(../../img/background/background-1523115_960_720.jpg);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.2em;
 }
 
@@ -64,7 +64,7 @@ h3 {
 }
 
 .card:hover {
-  box-shadow: 0 16px 16px 0 var(--color2);
+  box-shadow: 0 10px 16px 10px rgb(75, 75, 75);
 }
 
 .price {
@@ -305,7 +305,8 @@ h3 {
   font-size: 18px;
 }
 
-.cart-footer, .payment-footer {
+.cart-footer,
+.payment-footer {
   display: flex;
   float: left;
   flex-wrap: wrap;
@@ -315,7 +316,9 @@ h3 {
   padding-bottom: 0;
 }
 
-#clear-form, #go-payment-form, .cart-footer .full-price {
+#clear-form,
+#go-payment-form,
+.cart-footer .full-price {
   width: 33.33333333%;
 }
 
@@ -337,7 +340,8 @@ h3 {
     text-align: center;
   }
 
-  #clear-form, #go-payment-form {
+  #clear-form,
+  #go-payment-form {
     width: auto;
     text-align: center;
   }
@@ -395,8 +399,14 @@ h3 {
 #top10 {
   display: block;
   margin: 10px;
-  padding: 0 35px;
+  padding: 0 40px;
   position: relative;
+  box-shadow: 0 10px 12px 5px rgb(75, 75, 75);
+}
+
+#top10 h3 {
+  font-family: "Ink Free";
+  text-align: center;
 }
 
 #toplist {
@@ -428,18 +438,18 @@ h3 {
 #next-top {
   cursor: pointer;
   position: absolute;
-  top: 35%;
+  top: 45%;
   color: black;
   user-select: none;
   font-size: 40px;
 }
 
 #prev-top {
-  left: 0;
+  left: 15px;
 }
 
 #next-top {
-  right: 0;
+  right: 15px;
 }
 
 @media screen and (max-width: 1060px) {

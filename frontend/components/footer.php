@@ -19,7 +19,7 @@
             <ul>
                 <li><a href="?p=ASZF">ÁSZF</a></li>
                 <li><a href="?p=data_protection">Adatvédelem</a></li>
-                <li><a href="?p=cookie">Süti beállítások</a></li>
+                <li><a href="?p=cookie">Cookie szabályzat</a></li>
                 <li><a href="?p=checkout">Szállítás és fizetés</a></li>
             </ul>
         </div>
