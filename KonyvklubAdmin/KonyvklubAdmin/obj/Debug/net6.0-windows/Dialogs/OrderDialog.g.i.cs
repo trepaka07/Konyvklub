@@ -77,7 +77,7 @@ namespace KonyvklubAdmin.Dialogs {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/KonyvklubAdmin;component/dialogs/orderdialog.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/KonyvklubAdmin;V1.0.0.0;component/dialogs/orderdialog.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Dialogs\OrderDialog.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
