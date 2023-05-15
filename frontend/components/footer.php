@@ -25,21 +25,21 @@
         </div>
         <div class="help">
             <ul>
-                <li><a href="frontend/pages/sugo.php" target="blank">Súgó</a></li>
+                <li><a href="frontend/pages/help.php" target="blank">Súgó</a></li>
             </ul>
         </div>
     </div>
     <hr>
     <h5>Ez a projekt nem jött volna létre, ha nincs: Trepák Attila és Nagy Viktória</h5>
 
-    <!-- cookie elfogadás - kész-->
+    <!-- cookie elfogadás -->
     <div class="cookie-accept" style="display: <?php echo Konyvklub\get_cookie_state(); ?>;">
         <a href="?p=cookie">Cookie szabályzat</a>
         <form action="" method="post"><button type="submit" name="cookie" style="max-width: 300px;">Elfogadom</button></form>
     </div>
 
 
-    <!--up kép-->
+    <!--up-->
     <a href="#top"><img id="up" src="img/icons/arrow.png" alt="Fel"></a>
 
 </footer>

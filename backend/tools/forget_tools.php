@@ -35,6 +35,10 @@ if (get_var_ok("p", true, "newpassword") && get_var_ok("email", true) && get_var
 }
 
 if (post_var_ok("pwd_change") && post_var_ok("pwd", true) && get_var_ok("email") && get_var_ok("token")) {
+    if ($_POST["pwd"] != $_POST["pwd_again"]) {
+        set_error_msg("A jelszavak nem egyeznek!");
+        return;
+    }
     modify_password();
 }
 

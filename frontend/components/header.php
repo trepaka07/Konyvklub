@@ -33,9 +33,11 @@
 </header>
 
 <!--hibaüzenetek -->
-<div id="error-div" style="display:<?php echo Konyvklub\get_error_state(); ?>">
-  <h3 id="error-message"><?php echo Konyvklub\get_error_msg(); ?></h3>
-  <h3 id="error-close">
-    <form method="post"><input type="submit" name="close_error" value="X"></form>
-  </h3>
+<div id="error-container" style="display:<?php echo Konyvklub\get_error_state(); ?>;">
+  <div id="error-div">
+    <h3 id="error-message"><?php echo Konyvklub\get_error_msg(); ?></h3>
+    <h3 id="error-close">
+      <form method="post"><input type="submit" name="close_error" value="X"></form>
+    </h3>
+  </div>
 </div>

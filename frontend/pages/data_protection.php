@@ -1,6 +1,6 @@
 <!-- Adatvédelem -->
 <div class="data-protection">
-    <h2>Adatvédelem</h2>
+    <h2>Adatvédelemi szabályzat</h2>
 
     <h3>1. Előszó</h3>
     <p><b>1.1.</b> Jelen adatvédelmi szabályzat (a „Szabályzat”) a Könyvklub, (székhely: 2230 Gyömrő, Fő tér 2.) (továbbiakban a „Szolgáltató”) tevékenysége során kezelt adatokkal, és az általa vezetett és kezelt nyilvántartásokkal kapcsolatos adatvédelmi szabályokat tartalmazza, különös tekintettel az adatkezeléssel, adatfeldolgozással, adattovábbítással kapcsolatos adatvédelmi követelményekre.</p>

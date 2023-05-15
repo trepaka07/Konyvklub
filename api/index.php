@@ -153,6 +153,7 @@ if (post_var_ok("book", true)) {
     $result = $book_handler->select_contains($_POST["book"]);
     create_json($result);
 }
+
 // könyv törlése
 if (post_var_ok("del_book", true)) {
     if (!book_exists($_POST["del_book"])) return;
@@ -268,12 +269,6 @@ if (post_var_ok("mod_orderedbook")) {
 
     $result = $order_handler->update_ordered_books($_POST["mod_orderedbook"], $_POST["isbn"], $_POST["quantity"]);
     create_json($result);
-}
-
-if (isset($_POST["tokentest"])) {
-    $token = create_token();
-    $protocol = empty($_SERVER["HTTPS"]) ? "http" : "https";
-    echo $protocol . "://" . $_SERVER["HTTP_HOST"] . "/?email=$token->email&token=$token->token";
 }
 
 // JSON kiírása

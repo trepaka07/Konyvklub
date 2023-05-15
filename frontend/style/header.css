@@ -143,10 +143,14 @@ form.search button:hover {
   }
 }
 
+#error-container {
+  width: 100%;
+}
+
 #error-div {
   width: 50%;
   text-align: center;
-  margin: 15px 20px 5px 20px;
+  margin: 15px auto 5px auto;
   box-shadow: 0 0 5px black;
 }
 
