@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="hu" id="top">
 
 <head>
     <meta charset="UTF-8">
@@ -41,7 +41,7 @@
         <h4> A weboldal futtatásához szükséges szoftverek:</h4>
         <ul>
             <li> Operációs rendszer: Windows 7 vagy újabb, Linux Ubuntu 14, Mac OS 10.13.6 High Sierra, Android 4.4, IOS 9 vagy újabb</li>
-            <li> Böngésző: Google Chrome, Mozilla Firefox, Opera, Microsoft Edge</li>
+            <li> Böngésző: Google Chrome, Mozilla Firefox, Opera, Microsoft Edge, Brave</li>
         </ul>
 
         <h2> 3. A program telepítése</h2>
@@ -54,10 +54,10 @@
         <p> A kezdőoldal felső és alsó navigációs sávja minden oldalon elérhető, kiemelt színnel jelöltük.
             A felső navigációs sáv alatt láthatóak az első tíz „Legnépszerűbb könyveink”, a nyilak segítségével léptethetők jobb és bal irányban. Nyitóoldalunk szinte égészét könyvválasztékunk alkotja. A „Kosárhoz ad” gombra kattintva tehetjük könyvünket a kosárba. Könyvekre kattintva, új oldalon nyílik meg az adott könyv részletes leírása.</p>
 
-        <img class="screen2" src="../../img/docs/nyitolap.png" alt="KÉP2">
+        <img class="screen1" src="../../img/docs/nyitolap.png" alt="Kezdőoldal">
 
         <h2> 5. Bejelentkezés/Kijelentkezés</h2>
-        <p> A weboldal jobb felső sarkában található „Bejelentkezés” ikonra kattintva megjelenő előugró ablakban léphet be a felhasználó az oldalra, a regisztrációkor megadott e-mail címének és jelszavának megadásával. Amennyiben kipipálja az „Emlékezz rám” jelölőnégyzetet, a következő bejelentkezésnél már nem kell megadnia a jelszavát. </p>
+        <p> A weboldal jobb felső sarkában található „Bejelentkezés” ikonra kattintva megjelenő előugró ablakban léphet be a felhasználó az oldalra, a regisztrációkor megadott e-mail címének és jelszavának megadásával. Amennyiben bepipálja az „Emlékezz rám” jelölőnégyzetet, a következő bejelentkezésnél már nem kell megadnia a jelszavát. </p>
         <p> Az „Elfelejtette jelszavát?” szövegre kattintva elindítja az új jelszóigénylés folyamatát. </p>
         <p> Az „Regisztráció” szövegre kattintva hozhatja létre felhasználói profilját.</p>
 
@@ -73,7 +73,7 @@
 
         <img class="screen2" src="../../img/docs/signup.png" alt="KÉP2">
 
-        <p> A „Regisztrálok” gomb megnyomása előtt el kell fogadnia az Általános szerződési feltételeket. Ha ezt nem elmulasztja, egy felugró ablakban figyelmeztetjük erre.</p>
+        <p> A „Regisztrálok” gomb megnyomása előtt el kell fogadnia az Általános szerződési feltételeket. Ha ezt elmulasztja, egy felugró ablakban figyelmeztetjük erre.</p>
 
         <img class="screen2" src="../../img/docs/aszf_message.png" alt="KÉP2">
 
@@ -146,7 +146,12 @@
         </ul>
         <img class="screen1" src="../../img/docs/404_hibakód.png" alt="KÉP1">
 
+
+        <p><i> Készítette: Nagy Viktória és Trepák Attila</i></p>
     </div>
+
+    <!--up-->
+    <a href="#top"><img id="up" src="../../img/icons/arrow.png" alt="Fel"></a>
 </body>
 
 </html>

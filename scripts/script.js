@@ -111,3 +111,14 @@ function goToPayment(cartCount) {
     window.location.href = "?p=payment";
   }
 }
+
+function pwdCheck() {
+  let pwd = document.getElementById("signup-pwd");
+  let pwdAgain = document.getElementById("signup-pwd-again");
+  let match = pwd.value == pwdAgain.value;
+  if (!match) {
+    alert("A jelszavak nem egyeznek.");
+    return false;
+  }
+  return true;
+}

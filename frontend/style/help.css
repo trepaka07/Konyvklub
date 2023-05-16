@@ -14,8 +14,8 @@ body {
 .help-doc {
   background-color: rgb(247, 244, 244);
   text-decoration: none;
-  max-width: 85%;
-  padding: 15px;
+  max-width: 75%;
+  padding: 40px;
   margin: 20px auto;
 }
 .help-doc ul li {
@@ -23,6 +23,12 @@ body {
 }
 h1 {
   text-align: center;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(72, 69, 69);
 }
 img {
   display: flex;
@@ -32,5 +38,20 @@ img {
   width: 75%;
 }
 .screen2 {
-  width: 30%;
+  width: 40%;
+}
+#up {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #up {
+    display: block;
+    position: fixed;
+    margin: 0;
+    right: 10px;
+    bottom: 7px;
+    padding: 0px;
+    width: 40px;
+  }
 }

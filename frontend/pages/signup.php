@@ -5,7 +5,7 @@
   <div class="page-title">
     <h3>Regisztráció</h3>
   </div>
-  <form id="signup" method="POST">
+  <form id="signup" method="POST" onsubmit="return pwdCheck()">
 
     <label for="lastname"><b>Vezetéknév:</b></label>
     <input type="text" name="lastname" placeholder="Minta" required><br>
@@ -29,10 +29,10 @@
     <input type="tel" name="phone" placeholder="701234567" required><br>
 
     <label for="pwd"><b>Jelszó:</b></label>
-    <input type="password" name="pwd" placeholder="Jelszó" required><br>
+    <input type="password" id="signup-pwd" name="pwd" placeholder="Jelszó" required><br>
 
     <label for="pwd_again"><b>Jelszó újra</b></label>
-    <input type="password" name="pwd_again" placeholder="Jelszó újra" required><br>
+    <input type="password" id="signup-pwd-again" name="pwd_again" placeholder="Jelszó újra" required><br>
 
     <div id="aszf-accept">
       <input type="checkbox" id="accept" required>
