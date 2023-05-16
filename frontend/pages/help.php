@@ -18,7 +18,7 @@
 
         <h2> 1. Bevezetés</h2>
         <p> Jelen felhasználói kézikönyv a Könyvklub weboldal felhasználói számára készült.</p>
-        <p> Ebben a fejezetben mutatjuk be az alkalmazás oldalainak felépítését és működését, egy-egy mintaképernyő segítségével.</p>
+        <p> Ebben a fejezetben mutatjuk be az alkalmazás oldalainak felépítését és működését, egy-egy képernyőkép segítségével.</p>
 
         <h2> 2. Rendszerkövetelmények</h2>
         <h3> Hardver követelmények</h3>
@@ -52,7 +52,7 @@
         <p> A nyitóoldal felépítése, működése, a felhasználói felület illeszkedik a képernyő felbontásához.</p>
         <p> A weboldal betöltésekor a Főoldal nyílik meg, ha elkalandozna az oldalak között, és szeretne visszajutni a kezdő oldalra, akkor kattintson a bal felső sarokban lévő „Könyvklub” logóra. </p>
         <p> A kezdőoldal felső és alsó navigációs sávja minden oldalon elérhető, kiemelt színnel jelöltük.
-            A felső navigációs sáv alatt láthatóak az első tíz „Legnépszerűbb könyveink”, a nyilak segítségével léptethetők jobb és bal irányban. Nyitóoldalunk szinte égészét könyvválasztékunk alkotja. A „Kosárhoz ad” gombra kattintva tehetjük könyvünket a kosárba. Könyvekre kattintva, új oldalon nyílik meg az adott könyv részletes leírása.</p>
+            A felső navigációs sáv alatt láthatóak az első tíz „Legnépszerűbb könyveink”, melyek a nyilak segítségével léptethetők jobb és bal irányban. Nyitóoldalunk szinte égészét könyvválasztékunk alkotja. A „Kosárhoz ad” gombra kattintva tehetjük könyvünket a kosárba. Könyvekre kattintva, új oldalon nyílik meg az adott könyv részletes leírása.</p>
 
         <img class="screen1" src="../../img/docs/nyitolap.png" alt="Kezdőoldal">
 
