@@ -49,7 +49,7 @@
 							"formdata": [
 								{
 									"key": "admin_login",
-									"value": "Trepy",
+									"value": "Viki",
 									"type": "text"
 								},
 								{
@@ -84,7 +84,7 @@
 							"formdata": [
 								{
 									"key": "admin_signup",
-									"value": "Viki",
+									"value": "Test",
 									"type": "text"
 								},
 								{
@@ -119,7 +119,7 @@
 							"formdata": [
 								{
 									"key": "del_admin",
-									"value": "Viki",
+									"value": "Test",
 									"type": "text"
 								}
 							]
@@ -184,7 +184,7 @@
 							"formdata": [
 								{
 									"key": "user",
-									"value": "Trepy",
+									"value": "ta@trepy.hu",
 									"type": "text"
 								}
 							]
@@ -214,7 +214,7 @@
 							"formdata": [
 								{
 									"key": "del_user",
-									"value": "ta@trepy.hu",
+									"value": "teszt@trepy.hu",
 									"type": "text"
 								}
 							]
@@ -269,7 +269,7 @@
 								},
 								{
 									"key": "phone",
-									"value": "06704234569",
+									"value": "06701234567",
 									"type": "text"
 								},
 								{
@@ -339,7 +339,7 @@
 							"formdata": [
 								{
 									"key": "book",
-									"value": "jakfarkas",
+									"value": "el",
 									"type": "text"
 								}
 							]
@@ -369,7 +369,7 @@
 							"formdata": [
 								{
 									"key": "del_book",
-									"value": "154868",
+									"value": "9789636040284",
 									"type": "text"
 								}
 							]
@@ -382,6 +382,36 @@
 								"hu"
 							],
 							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "books - delete Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "del_book",
+									"value": "9789636040284",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:80/Konyvklub_old/api/",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"Konyvklub_old",
 								"api",
 								""
 							]
@@ -404,7 +434,7 @@
 								},
 								{
 									"key": "isbn",
-									"value": "4561552",
+									"value": "9789635182350",
 									"type": "text"
 								},
 								{
@@ -419,7 +449,7 @@
 								},
 								{
 									"key": "description",
-									"value": "Ez a polaroidok leírása",
+									"value": "Simon Márton új verseskötete a nagyvárosi szorongás szótára. Szélesvásznú történeteket mesél el néhány szóban vagy egy-egy mondatban, a félig kihunyt fényreklámok tömörségével. Baltával és körömollóval esik neki a nyelvnek, mintha mindig azt az egyetlen elrugaszkodási pontot keresné, ahol költészet és valóság egymásba zuhan. De miután megtalálta és megmutatta nekünk, udvariasan hátralép, és csak annyit mond: Uram, íme, a szakadék, amit rendelt.",
 									"type": "text"
 								},
 								{
@@ -429,7 +459,7 @@
 								},
 								{
 									"key": "price",
-									"value": "1800",
+									"value": "1700",
 									"type": "text"
 								},
 								{
@@ -444,7 +474,7 @@
 								},
 								{
 									"key": "image",
-									"value": "polaroidok.jpg",
+									"value": "simon-polaroidok.jpg",
 									"type": "text"
 								}
 							]
@@ -479,7 +509,7 @@
 								},
 								{
 									"key": "isbn",
-									"value": "4561552",
+									"value": "9789635182350",
 									"type": "text"
 								},
 								{
@@ -494,7 +524,7 @@
 								},
 								{
 									"key": "description",
-									"value": "Ez a polaroidok leírása",
+									"value": "Simon Márton új verseskötete a nagyvárosi szorongás szótára. Szélesvásznú történeteket mesél el néhány szóban vagy egy-egy mondatban, a félig kihunyt fényreklámok tömörségével. Baltával és körömollóval esik neki a nyelvnek, mintha mindig azt az egyetlen elrugaszkodási pontot keresné, ahol költészet és valóság egymásba zuhan. De miután megtalálta és megmutatta nekünk, udvariasan hátralép, és csak annyit mond: Uram, íme, a szakadék, amit rendelt.",
 									"type": "text"
 								},
 								{
@@ -504,12 +534,12 @@
 								},
 								{
 									"key": "price",
-									"value": "1800",
+									"value": "1899",
 									"type": "text"
 								},
 								{
 									"key": "stock",
-									"value": "5",
+									"value": "20",
 									"type": "text"
 								},
 								{
@@ -519,7 +549,7 @@
 								},
 								{
 									"key": "image",
-									"value": "polaroidok.jpg",
+									"value": "simon-polaroidok.jpg",
 									"type": "text"
 								}
 							]
@@ -649,7 +679,7 @@
 								},
 								{
 									"key": "orderID",
-									"value": "TA-20230318134154",
+									"value": "TA-20230515173",
 									"type": "text"
 								}
 							]
@@ -679,7 +709,7 @@
 							"formdata": [
 								{
 									"key": "orderedbooks",
-									"value": "TA-20230318134154",
+									"value": "TA-20230515173241",
 									"type": "text"
 								}
 							]
